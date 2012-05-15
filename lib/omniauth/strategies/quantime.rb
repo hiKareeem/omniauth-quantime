@@ -35,7 +35,7 @@ module OmniAuth
       end
 
       def raw_info
-        @raw_info ||= access_token.get('/me').parsed
+        @raw_info ||= access_token.get('/me.json').parsed
       end
 
       def prune!(hash)
@@ -47,3 +47,5 @@ module OmniAuth
     end
   end
 end
+
+OmniAuth.config.add_camelization 'quantime', 'Quantime'
