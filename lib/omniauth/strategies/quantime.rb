@@ -9,7 +9,7 @@ module OmniAuth
       # This is where you pass the options you would pass when
       # initializing your consumer from the OAuth gem.
       option :client_options, {
-        :site => "http://api.lvh.me:3000",
+        :site => "http://lvh.me:3000",
         :authorize_url => '/oauth/authorize',
         :token_url => '/oauth/token'
       }
